@@ -1,10 +1,10 @@
-import App from "../App";
+
 import React from 'react'
 
 export default function Home() {
     return (
         <div>
-           <title>hola</title> 
+           <h1>hola</h1> 
         </div>
     )
 }
