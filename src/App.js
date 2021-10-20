@@ -1,16 +1,13 @@
-import reactDom from 'react-dom';
 import {React} from 'react';
 import './App.css';
-
-
+import Home from './viewPages/Home';
+import Admin from './viewPages/Admin';
 
 import {
   Switch,
   Route,
   BrowserRouter as Router,
-} 
-
-from "react-router-dom";
+} from "react-router-dom";
 
 
 function App() {
