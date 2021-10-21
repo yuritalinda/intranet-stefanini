@@ -4,6 +4,9 @@ import Home from '../../viewPages/Home'
 import Admin from '../../viewPages/Admin'
 import { collection, getDocs } from "firebase/firestore";
 import db from '../../firebase/firebaseConfig'
+import '../../components/header/Header.css'
+import '../../components/options/Options.css'
+import '../../components/footer/Footer.css'
 
 
 
