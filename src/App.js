@@ -21,7 +21,7 @@ function App() {
 
      const obtenerDatos=async()=>{
       const datos=await getDocs(collection(db,'user'));
-      console.log(datos.docs[0].data());
+      console.log(datos.docs);
      }
     obtenerDatos();
 
