@@ -1,9 +1,10 @@
 import React from 'react'
+import { Button } from 'reactstrap';
 
 export default function Home() {
     return (
         <div>
-         <h3>hola</h3>
+         <Button color="danger">Danger Prueba!</Button>
         </div>
     )
 }
