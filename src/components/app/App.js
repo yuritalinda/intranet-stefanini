@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
-import './App.css';
-import Home from './viewPages/Home';
-import Admin from './viewPages/Admin';
+import '../../components/app/App.css'
+import Home from '../../viewPages/Home'
+import Admin from '../../viewPages/Admin'
 import { collection, getDocs } from "firebase/firestore";
-import db from './firebase/firebaseConfig';
+import db from '../../firebase/firebaseConfig'
 
 
 
