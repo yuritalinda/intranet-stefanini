@@ -1,0 +1,18 @@
+.header{
+    background-color: #0B1641;
+    height: 7rem;
+    display:flex;
+    align-items: center;
+  }
+.user-admin{
+    width: 4rem;
+    border: 1px solid red;
+}
+
+.logo-stefanini{
+    width: 40%;
+}
+
+.button{
+    margin-right: 10px;  
+}
