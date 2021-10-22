@@ -3,13 +3,12 @@ import '../../components/app/App.css'
 import Home from '../../viewPages/Home'
 import Admin from '../../viewPages/Admin'
 import { collection, getDocs } from "firebase/firestore";
-import Auth from './components/Auth'
-import CreateUser from './components/CreateUser';
 import db from '../../firebase/firebaseConfig'
 import '../../components/header/Header.css'
 import '../../components/options/Options.css'
 import '../../components/footer/Footer.css'
-
+import Auth from '../../auth/Auth.jsx'
+import CreateUser from '../../auth/CreateUser';
 
 
 import {
@@ -37,11 +36,6 @@ function App() {
     
 <Router>
 <Switch>
-<div className="App">
-<p>Usuario:</p>
-<CreateUser/>
-<Auth/>
-  </div>
 <Route exact path ="/" component={Home}/>
 <Route exact path ="/Admin" component={Admin}/>
 </Switch>
