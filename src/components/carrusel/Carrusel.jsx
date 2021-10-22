@@ -6,9 +6,10 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
+import '../carrusel/Carrusel.css'
 const items = [
     {
-      src: 'https://i.postimg.cc/902BHhCB/academia.png',
+      src: 'https://i.postimg.cc/P5pgZJQF/colleagues-giving-fist-bump.jpg',
       altText: 'Titulo',
       caption: 'Description'
     },
@@ -47,12 +48,12 @@ const items = [
   
     const slides = items.map((item) => {
       return (
-        <CarouselItem
+        <CarouselItem className="carrusel-item"
           onExiting={() => setAnimating(true)}
           onExited={() => setAnimating(false)}
           key={item.src}
         >
-          <img src={item.src} alt={item.altText} />
+          <img className="carr-img" src={item.src} alt={item.altText} />
           <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
         </CarouselItem>
       );
