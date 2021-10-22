@@ -1,13 +1,13 @@
 import React, {useState} from "react";
 import { getAuth,signInWithEmailAndPassword } from 'firebase/auth';
-import {useFirebaseApp}  from 'reactfire';
-
-
+import {useFirebaseApp, useUser}  from 'reactfire';
+import Home from "./HomeAdmin";
 
 export default (props) => {
     const [email, setEmail] = useState ('');
     const [password, setPassword] = useState ('');
-
+    const { status, data: user } = useUser();
+    console.log(user)
     const firebase = useFirebaseApp();
     const auth = getAuth(firebase);
     console.log(auth)
@@ -15,6 +15,11 @@ export default (props) => {
     const login = async () => {
         await signInWithEmailAndPassword(auth,email, password);
     }
+  
+    if (user) {
+      return <Home/>;
+    }
+  
     return(
      <div>
          <div>
