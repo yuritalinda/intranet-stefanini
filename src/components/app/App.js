@@ -7,8 +7,6 @@ import db from '../../firebase/firebaseConfig'
 import '../../components/header/Header.css'
 import '../../components/options/Options.css'
 import '../../components/footer/Footer.css'
-import Auth from '../../auth/Auth.jsx'
-import CreateUser from '../../auth/CreateUser';
 
 
 import {

@@ -1,18 +1,33 @@
-.header{
-    background-color: #0B1641;
-    height: 7rem;
+@import '../../index.css';
+
+.header-container{
     display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
-  }
-.user-admin{
-    width: 4rem;
-    border: 1px solid red;
+    width: 100vw;
 }
 
-.logo-stefanini{
+.logo-container{
     width: 40%;
 }
 
-.button{
-    margin-right: 10px;  
+.logo-container img{
+    width: 60%;
+}
+
+
+.user-admin{
+    width: 7rem;
+    margin: 10%;
+}
+
+
+.btns-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    min-width: 30%;
 }
