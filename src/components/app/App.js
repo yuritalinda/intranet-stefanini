@@ -12,7 +12,6 @@ import {AuthProvider, useFirebaseApp } from 'reactfire';
 import { getAuth } from 'firebase/auth'; 
 
 
-
 import {
   Switch,
   Route,
