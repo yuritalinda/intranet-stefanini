@@ -1,4 +1,4 @@
-import { Button } from 'reactstrap';
+
 
 
 
@@ -9,9 +9,9 @@ function Header () {
                 <img className="logo-stefanini" src="https://i.postimg.cc/mZ3wNtyp/stefanini-png.png" alt="stefanini-png"/>
         </div>
         <div className="btns-container">
-                <Button className="btn-header" color="primary">Inicio</Button>{' '}
-                <Button className="btn-header" color="primary">Beneficios</Button>{' '}
-                <Button className="btn-header" color="primary">Contacto</Button>{' '}
+                <button className="btn-header" color="primary">Inicio</button>{' '}
+                <button className="btn-header" color="primary">Beneficios</button>{' '}
+                <button className="btn-header" color="primary">Contacto</button>{' '}
         </div>
                
         <div className="login-btn-container">
