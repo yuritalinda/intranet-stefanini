@@ -6,7 +6,8 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-import '../carrusel/Carrusel.css'
+import '../carrusel/Carrusel.css';
+
 const items = [
     {
       src: 'https://i.postimg.cc/P5pgZJQF/colleagues-giving-fist-bump.jpg',
