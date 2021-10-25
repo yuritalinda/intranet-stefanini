@@ -2,9 +2,13 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>
-     <h1>Este es el footer</h1> 
-    </div>
+    <footer className="footer-container">
+
+      <div className="footer-credits">
+        Stefanini Intranet by "Las Reactivas" - Laboratoria SCL017
+      </div>
+      
+    </footer>
   )
 }
 
