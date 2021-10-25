@@ -4,7 +4,7 @@ import Carrusel from '../components/carrusel/Carrusel'
 import Options from '../components/options/Options'
 import Footer from '../components/footer/Footer'
 import '../viewPages/home.css'
-
+import OptionTest from '../components/options/OptionTest'
 
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
 
          <Carrusel />
          <Options />
-
+         <OptionTest />
          </div>
 
          <Footer />
