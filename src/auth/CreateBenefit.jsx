@@ -10,6 +10,7 @@ import {ref, uploadBytes, getDownloadURL} from "firebase/storage";
 
 
 const CreateBenefit = () => {
+
   let urlDescarga;
 
   const firestore = useFirestore();
@@ -45,11 +46,11 @@ const CreateBenefit = () => {
       <hr />
       <Form  onSubmit={addBenefit}>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-        <Label for="formDescripcion" className="mr-sm-2">Email</Label>
+        <Label for="formDescripcion" className="mr-sm-2">Descripcion</Label>
         <Input type="text" id="formDescripcion" placeholder="Describe tu tarea" />
       </FormGroup>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-        <Label for="file" className="mr-sm-2">Password</Label>
+        <Label for="file" className="mr-sm-2">Selecciona Archivo</Label>
         <Input type="file" id="file" placeholder="Añade archivo"  onChange={fileHandler} />
       </FormGroup>
       <Button>Submit</Button>
