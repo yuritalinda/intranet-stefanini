@@ -22,17 +22,18 @@ import { Container, Row, Col } from 'reactstrap';
       return (
         <Container fluid={true}>
           <Row>
-        <Col><MenuAdmin toggle={toggleSidebar} isOpen={sidebarIsOpen} /></Col>
-        <Col xs="auto"> <h1>Bienvenidas, sesión iniciada, laboratoria.</h1>
-          <button onClick={cerrarSesion}>Cerrar Sesión</button></Col>
+        <Col className="col-auto"><button className="button-cerrar" onClick={cerrarSesion}>Cerrar Sesión</button>
+        <MenuAdmin toggle={toggleSidebar} isOpen={sidebarIsOpen} /></Col>
+        <Col> <Benefit />
+        <Row>
+        
+        <ShowBenefit />
+      </Row>
+      </Col>
+      
     
       </Row>
-      <Row>
-        <Col>
-        <Benefit />
-          <ShowBenefit />
-        </Col>
-      </Row>
+      
          
           
 
