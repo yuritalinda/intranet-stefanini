@@ -25,3 +25,71 @@ body{
   background-image: url(./viewPages/BG.svg);
   
 }
+
+.img-benef{
+  width: 200px;
+}
+
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #0b1641;
+  height: 500px;
+  overflow: scroll;
+  padding-top: 30px;
+}
+.contenedor-img{
+  width: 120px;
+  margin-bottom: 15px;
+
+}
+.item-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-container p{
+  width: 10%;
+}
+.button-cerrar{
+  color: #F7F2EC;
+  background-color: transparent;
+  border: 1px solid #F7F2EC;
+  padding:5px;
+  margin:20px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+.button-cerrar:hover{
+  background-color:#FFFFFF;
+  color: black;
+}
+
+.button-delete{
+  color: white;
+  background-color:#941c04;
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button-delete:hover{
+  background-color: #F7F2EC;
+  color:black;
+}
+
+@media (max-width: 500px){
+  .sidebar {
+    display: none;
+  }
+  .button-delete{
+    width: 18%;
+    font-size: 0.8rem;
+    margin-left: 40px;
+    padding:10px;
+  }
+}
