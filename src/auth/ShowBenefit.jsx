@@ -22,6 +22,7 @@ return <div>cargando</div>
 
         return (
           <>
+          
             <div className="h-20 overflow-x-scroll shadow-inner m-2 border border-black">
               <ul>
                 {benefits.map((benefit) => (

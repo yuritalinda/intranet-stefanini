@@ -23,8 +23,10 @@ const CreateBenefit = () => {
     e.preventDefault();
     
     const descripcion = e.target.formDescripcion.value;
-
-  addDoc(benefitsCollection, {descripcion, url: urlDescarga});
+    const urlBeneficio = e.target.urlBeneficio.value;
+    const titulo = e.target.titulo.value;
+console.log(titulo);
+  addDoc(benefitsCollection, {titulo, descripcion, urlBeneficio, url: urlDescarga});
   }
 
   async function fileHandler(e) {
@@ -46,8 +48,16 @@ const CreateBenefit = () => {
       <hr />
       <Form  onSubmit={addBenefit}>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+        <Label for="titulo" className="mr-sm-2">titulo</Label>
+        <Input type="text" id="titulo" placeholder="Agrega un titulo" />
+      </FormGroup>
+      <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
         <Label for="formDescripcion" className="mr-sm-2">Descripcion</Label>
-        <Input type="text" id="formDescripcion" placeholder="Describe tu tarea" />
+        <Input type="text" id="formDescripcion" placeholder="Agrega una descripción" />
+      </FormGroup>
+      <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+        <Label for="urlBeneficio" className="mr-sm-2">Url Beneficio</Label>
+        <Input type="text" id="urlBeneficio" placeholder="Agrega una url de tu beneficio" />
       </FormGroup>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
         <Label for="file" className="mr-sm-2">Selecciona Archivo</Label>
