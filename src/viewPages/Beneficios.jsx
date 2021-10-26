@@ -1,9 +1,8 @@
 import React from "react";
-import BeneficiosCorp from '../components/BeneficiosCorporativos/BeneficiosCorp'
-
+import BenefitsCorp from "../components/BeneficiosCorporativos/BenefitsCorp";
 function Beneficios () {
     return(
-      <BeneficiosCorp />
+      <BenefitsCorp />
     )
 }
 export default Beneficios

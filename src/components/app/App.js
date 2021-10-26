@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import '../../components/app/App.css'
 import Home from '../../viewPages/Home'
 import Admin from '../../viewPages/Admin'
-import Beneficios from '../BeneficiosCorporativos/BeneficiosCorp'
+import Beneficios from '../../viewPages/Beneficios';
 import SeguroComplementario from '../seguroComp/SeguroComplementario'
 import PerfilEmpleado from '../../viewPages/PerfilEmpleado'
 import { collection, getDocs, enableIndexedDbPersistence, initializeFirestore} from "firebase/firestore";
