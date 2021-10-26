@@ -48,22 +48,22 @@ console.log(titulo);
       <hr />
       <Form  onSubmit={addBenefit}>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-        <Label for="titulo" className="mr-sm-2">titulo</Label>
+        <Label for="titulo" className="mr-sm-2">Titulo</Label>
         <Input type="text" id="titulo" placeholder="Agrega un titulo" />
       </FormGroup>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-        <Label for="formDescripcion" className="mr-sm-2">Descripcion</Label>
+        <Label for="formDescripcion" className="mr-sm-2">Descripción</Label>
         <Input type="text" id="formDescripcion" placeholder="Agrega una descripción" />
       </FormGroup>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-        <Label for="urlBeneficio" className="mr-sm-2">Url Beneficio</Label>
-        <Input type="text" id="urlBeneficio" placeholder="Agrega una url de tu beneficio" />
+        <Label for="urlBeneficio" className="mr-sm-2">Url</Label>
+        <Input type="text" id="urlBeneficio" placeholder="Agrega una url" />
       </FormGroup>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
         <Label for="file" className="mr-sm-2">Selecciona Archivo</Label>
         <Input type="file" id="file" placeholder="Añade archivo"  onChange={fileHandler} />
       </FormGroup>
-      <Button>Submit</Button>
+      <Button>Enviar</Button>
     </Form>
     </Container>
   );
