@@ -1,11 +1,9 @@
 import React from 'react'
 import Header from '../components/header/Header'
 import Carrusel from '../components/carrusel/Carrusel'
-import Options from '../components/options/Options'
 import Footer from '../components/footer/Footer'
 import '../viewPages/home.css'
-
-
+import ShowOption from '../components/options/ShowOption'
 
 export default function Home() {
     return (
@@ -15,8 +13,7 @@ export default function Home() {
          <div className="main-container">
 
          <Carrusel />
-         <Options />
-
+         <ShowOption />
          </div>
 
          <Footer />
