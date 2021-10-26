@@ -1,9 +1,8 @@
-import React, {useState} from "react";
-import app from '../firebase/firebaseConfig';
+import React from "react";
 import 'firebase/auth';
-import { FirebaseAppProvider } from "reactfire";
 import { signOut, getAuth} from "@firebase/auth";
-import {useFirebaseApp, useUser}  from 'reactfire';
+import {useFirebaseApp}  from 'reactfire';
+import Benefit from "./CreateBenefit";
 
  const HomeAdmin = () => {
 
@@ -19,6 +18,7 @@ import {useFirebaseApp, useUser}  from 'reactfire';
         <div>
           <h1>Bienvenidas, sesión iniciada, laboratoria.</h1>
           <button onClick={cerrarSesion}>Cerrar Sesión</button>
+          <Benefit />
         </div>
       );
     };

@@ -2,18 +2,17 @@ import React, {useEffect} from 'react';
 import '../../components/app/App.css'
 import Home from '../../viewPages/Home'
 import Admin from '../../viewPages/Admin'
-import Beneficios from '../../viewPages/Beneficios'
+import Beneficios from '../BeneficiosCorporativos/BeneficiosCorp'
+import SeguroComplementario from '../seguroComp/SeguroComplementario'
 import PerfilEmpleado from '../../viewPages/PerfilEmpleado'
-import SeguroComplementario from '../../viewPages/SeguroComplementario';
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, enableIndexedDbPersistence, initializeFirestore} from "firebase/firestore";
 import db from '../../firebase/firebaseConfig'
 import '../../components/header/Header.css'
 import '../../components/options/Options.css'
 import '../../components/footer/Footer.css'
-import Auth from '../../auth/Auth.jsx'
-import {AuthProvider, useFirebaseApp } from 'reactfire';
+import {AuthProvider, useFirebaseApp , StorageProvider, FirestoreProvider,  useInitFirestore,} from 'reactfire';
 import { getAuth } from 'firebase/auth'; 
-
+import { ref, uploadBytesResumable, getStorage } from 'firebase/storage';
 
 import {
   Switch,
@@ -30,8 +29,13 @@ function App() {
   
   const app = useFirebaseApp();
 
+  const {status, data: firestoreInstance} = useInitFirestore(async (firebaseApp) => {
+    const db = initializeFirestore(firebaseApp, {});
+    return db;
+  });
 
 const auth = getAuth(app);
+const storage = getStorage(app);
 
   useEffect(()=>{
 
@@ -43,8 +47,15 @@ const auth = getAuth(app);
 
 
   },[])
+
+  if (status === 'loading') {
+    return <div>cargando</div>
+  }
+
   return (
     <AuthProvider sdk={auth}>
+    <StorageProvider sdk={storage}>
+    <FirestoreProvider sdk={firestoreInstance}>
 <Router>
 <Switch>
 <Route exact path ="/" component={Home}/>
@@ -54,6 +65,8 @@ const auth = getAuth(app);
 <Route exact path ="/Creacion-perfil-empleado" component={PerfilEmpleado}/>
 </Switch>
 </Router>
+</FirestoreProvider>
+</StorageProvider>
 </AuthProvider>
   );
 }

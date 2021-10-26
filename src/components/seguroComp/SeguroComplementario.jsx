@@ -10,58 +10,67 @@ import '../carrusel/Carrusel.css';
 
 const items = [
     {
-      src: 'https://i.postimg.cc/qBXXGsxJ/Folleto-Seguro-Complementario-1-page-0001.jpg',
+      src: 'https://i.postimg.cc/CKyLbXcr/Folleto-Seguro-Complementario-1-page-0001.jpg',
       altText: 'Titulo',
       caption: 'Description'
     },
     {
-      src: 'https://i.postimg.cc/nr0mf13q/Folleto-Seguro-Complementario-2-page-0001.jpg',
+      src: 'https://i.postimg.cc/RFSmRBKd/Folleto-Seguro-Complementario-2-page-0001.jpg',
       altText: 'Titulo',
       caption: 'Description'
     },
     {
-      src: 'https://i.postimg.cc/WpngZ2st/Folleto-Seguro-Complementario-3-page-0001.jpg',
+      src: 'https://i.postimg.cc/tgHpsPgL/Folleto-Seguro-Complementario-3-page-0001.jpg',
       altText: 'Titulo',
       caption: 'Description'
     },
     {
-      src: 'https://i.postimg.cc/TwvgV1y5/Folleto-Seguro-Complementario-4-page-0001.jpg',
+      src: 'https://i.postimg.cc/bNszWpMF/Folleto-Seguro-Complementario-4-page-0001.jpg',
       altText: 'Titulo',
       caption: 'Description'
     },
     {
-      src: 'https://i.postimg.cc/FRbcDvcW/Folleto-Seguro-Complementario-5-page-0001.jpg',
+      src: 'https://i.postimg.cc/HsRpCF1W/Folleto-Seguro-Complementario-5-page-0001.jpg',
       altText: 'Titulo',
       caption: 'Description'
     },
     {
-      src: 'https://i.postimg.cc/vTQnKKtQ/Folleto-Seguro-Complementario-6-page-0001.jpg',
+      src: 'https://i.postimg.cc/cL3d1TdR/Folleto-Seguro-Complementario-6-page-0001.jpg',
       altText: 'Titulo',
       caption: 'Description'
     },
     {
-      src: 'https://i.postimg.cc/nLDq9BLt/Folleto-Seguro-Complementario-7-page-0001.jpg',
+      src: 'https://i.postimg.cc/ZYfbwCfd/Folleto-Seguro-Complementario-7-page-0001.jpg',
       altText: 'Titulo',
       caption: 'Description'
     },
     {
-      src: 'https://i.postimg.cc/CLxDHWK7/Folleto-Seguro-Complementario-8-page-0001.jpg',
-      altText: 'Titulo',
-      caption: 'Description'
-    }
-    ,
-    {
-      src: 'https://i.postimg.cc/P509GgVz/INFOGRAFIA-APP-WEB-v2020-1-page-0001.jpg',
+      src: 'https://i.postimg.cc/9ftVZMRz/Folleto-Seguro-Complementario-8-page-0001.jpg',
       altText: 'Titulo',
       caption: 'Description'
     },
     {
-      src: 'https://i.postimg.cc/Qt3zCp3F/INFOGRAFIA-APP-WEB-v2020-2-page-0001.jpg',
+      src: 'https://i.postimg.cc/Pxw7YVFy/Disen-o-sin-ti-tulo-7.png',
       altText: 'Titulo',
       caption: 'Description'
     },
     {
-      src: 'https://i.postimg.cc/JhWx5Mdg/afiche-reembolso-page-0001.jpg',
+      src: 'https://i.postimg.cc/1X4ZkrWN/INFOGRAFIA-APP-WEB-v2020-1-page-0001.jpg',
+      altText: 'Titulo',
+      caption: 'Description'
+    },
+    {
+      src: 'https://i.postimg.cc/Rh8z4J8p/INFOGRAFIA-APP-WEB-v2020-2-page-0001.jpg',
+      altText: 'Titulo',
+      caption: 'Description'
+    },
+    {
+      src: 'https://i.postimg.cc/pTcsK696/IMG-5152.jpg',
+      altText: 'Titulo',
+      caption: 'Description'
+    },
+    {
+      src: 'https://i.postimg.cc/8cqw0fmd/IMG-5153.jpg',
       altText: 'Titulo',
       caption: 'Description'
     }
