@@ -4,7 +4,7 @@ import './index.css';
 import App from './components/app/App'
 import reportWebVitals from './reportWebVitals';
 import {FirebaseAppProvider} from 'reactfire';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBJ6PjzeqlYnrycJnjbENSJOdtlb5VixuQ",

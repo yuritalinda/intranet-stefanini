@@ -2,6 +2,9 @@ import React, {useEffect} from 'react';
 import '../../components/app/App.css'
 import Home from '../../viewPages/Home'
 import Admin from '../../viewPages/Admin'
+import Beneficios from '../BeneficiosCorporativos/BeneficiosCorp'
+import SeguroComplementario from '../seguroComp/SeguroComplementario'
+import PerfilEmpleado from '../../viewPages/PerfilEmpleado'
 import { collection, getDocs, enableIndexedDbPersistence, initializeFirestore} from "firebase/firestore";
 import db from '../../firebase/firebaseConfig'
 import '../../components/header/Header.css'
@@ -18,6 +21,8 @@ import {
 } 
 
 from "react-router-dom";
+
+
 
 
 function App() {
@@ -55,6 +60,9 @@ const storage = getStorage(app);
 <Switch>
 <Route exact path ="/" component={Home}/>
 <Route exact path ="/Admin" component={Admin}/>
+<Route exact path ="/Beneficios-Corporativos" component={Beneficios}/>
+<Route exact path ="/Seguro-Complementario" component={SeguroComplementario}/>
+<Route exact path ="/Creacion-perfil-empleado" component={PerfilEmpleado}/>
 </Switch>
 </Router>
 </FirestoreProvider>
