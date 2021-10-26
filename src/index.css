@@ -38,10 +38,11 @@ input{
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #0b1641;
+  background-color: #fafafa54;
   height: 500px;
   overflow: scroll;
   padding-top: 30px;
+
 }
 .contenedor-img{
   width: 120px;
@@ -55,7 +56,8 @@ input{
   justify-content: space-between;
 }
 .item-container p{
-  width: 10%;
+  width: 20%;
+  font-size: 1.5rem;
 }
 .button-cerrar{
   color: #F7F2EC;
@@ -75,7 +77,7 @@ input{
 
 .button-delete{
   color: white;
-  background-color:#941c04;
+  background-color:#c70160;
   padding: 10px;
   margin-right: 5px;
   border-radius: 10px;

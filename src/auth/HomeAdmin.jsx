@@ -21,11 +21,11 @@ import { Container, Row, Col } from 'reactstrap';
 
       return (
         <Container fluid={true}>
-          <Row>
+          <Row className="row">
         <Col className="col-auto"><button className="button-cerrar" onClick={cerrarSesion}>Cerrar Sesión</button>
         <MenuAdmin toggle={toggleSidebar} isOpen={sidebarIsOpen} /></Col>
         <Col> <Benefit />
-        <Row>
+        <Row className="row">
         
         <ShowBenefit />
       </Row>

@@ -41,12 +41,12 @@ const CreateBenefit = () => {
     
     // obtener url de descarga
     urlDescarga = await getDownloadURL(archivoRef);
+
   }
 
 
   return (
     <Container>
-      <hr />
       <Form  onSubmit={addBenefit}>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
         <Label for="titulo" className="mr-sm-2">Titulo</Label>

@@ -5,8 +5,7 @@ import {
     useFirestore,
   } from 'reactfire';
 import '../viewPages/admin.css';
-
-  import '../../src/index.css'
+import '../../src/index.css'
 const ShowBenefit = () => {
 
     const firestore = useFirestore();
