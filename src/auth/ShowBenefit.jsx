@@ -6,6 +6,7 @@ import {
   } from 'reactfire';
 import '../viewPages/admin.css';
 
+  import '../../src/index.css'
 const ShowBenefit = () => {
 
     const firestore = useFirestore();
@@ -24,11 +25,18 @@ return <div>cargando</div>
         return (
           <>
           
-            <div className="h-20 overflow-x-scroll shadow-inner m-2 border border-black">
+            <div className="contenedor">
               <ul>
                 {benefits.map((benefit) => (
-                  <li className="benefit-item" key={benefit.NO_ID_FIELD}>
-                    {benefit.titulo} <img src={benefit.url}/> <button onClick={() => removeBenefit(benefit.NO_ID_FIELD)}>X</button>
+                  <li className="item-container" key={benefit.NO_ID_FIELD}>
+                    <p>
+                    {benefit.descripcion}
+                    </p>
+                    <div className="contenedor-img">
+                    <img className="img-benef" src={benefit.url}/> 
+                    </div>
+                    <button className="button-delete" onClick={() => removeBenefit(benefit.NO_ID_FIELD)}>Eliminar</button>
+                     
                   </li>
                 ))}
               </ul>
