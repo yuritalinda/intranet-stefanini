@@ -24,11 +24,11 @@ export default (props) => {
     return(
     
          <div className="login-container">
-             <label htmlFor="email">correo electronico</label>
+             <label htmlFor="email">Correo Electrónico</label>
              <input type="email" id="email" onChange={ (ev)=> setEmail(ev.target.value)}/>
-             <label htmlFor="password">contraseña</label>
+             <label htmlFor="password">Contraseña</label>
              <input type="password" id="password" onChange={ (ev)=> setPassword(ev.target.value)}/>
-             <button onClick={login}>ingresar</button>
+             <button onClick={login}>Ingresar</button>
         </div>
        
     )

@@ -22,13 +22,11 @@ const CreateBenefit = () => {
 
   async function addBenefit(e) {
     e.preventDefault();
-
-    const titulo = e.target.formTitulo.value;
     
     const descripcion = e.target.formDescripcion.value;
     const urlBeneficio = e.target.urlBeneficio.value;
     const titulo = e.target.titulo.value;
-console.log(titulo);
+
   addDoc(benefitsCollection, {titulo, descripcion, urlBeneficio, url: urlDescarga});
   }
 
