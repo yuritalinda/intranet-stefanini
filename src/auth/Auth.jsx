@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { getAuth,signInWithEmailAndPassword } from 'firebase/auth';
 import {useFirebaseApp, useUser}  from 'reactfire';
 import Home from "./HomeAdmin";
+import '../viewPages/admin.css';
 
 export default (props) => {
     const [email, setEmail] = useState ('');
@@ -21,17 +22,14 @@ export default (props) => {
     }
   
     return(
-     <div>
-         <div>
+    
+         <div className="login-container">
              <label htmlFor="email">correo electronico</label>
              <input type="email" id="email" onChange={ (ev)=> setEmail(ev.target.value)}/>
              <label htmlFor="password">contraseña</label>
              <input type="password" id="password" onChange={ (ev)=> setPassword(ev.target.value)}/>
              <button onClick={login}>ingresar</button>
-             
-
-
-         </div>
-     </div>   
+        </div>
+       
     )
 }

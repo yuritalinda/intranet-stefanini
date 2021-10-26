@@ -25,3 +25,7 @@ body{
   background-image: url(./viewPages/BG.svg);
   
 }
+
+input{
+  color: #0b1641;
+}

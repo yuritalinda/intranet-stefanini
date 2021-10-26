@@ -9,6 +9,7 @@ import { collection, addDoc} from "firebase/firestore";
 import {ref, uploadBytes, getDownloadURL} from "firebase/storage";
 
 
+
 const CreateBenefit = () => {
 
   let urlDescarga;
@@ -21,10 +22,12 @@ const CreateBenefit = () => {
 
   async function addBenefit(e) {
     e.preventDefault();
+
+    const titulo = e.target.formTitulo.value;
     
     const descripcion = e.target.formDescripcion.value;
 
-  addDoc(benefitsCollection, {descripcion, url: urlDescarga});
+  addDoc(benefitsCollection, {titulo, descripcion, url: urlDescarga});
   }
 
   async function fileHandler(e) {
@@ -46,6 +49,10 @@ const CreateBenefit = () => {
       <hr />
       <Form  onSubmit={addBenefit}>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+        <Label for="formTitulo" className="mr-sm-2">Titulo</Label>
+        <Input type="text" id="formTitulo" placeholder="Describe tu tarea" />
+      </FormGroup>
+      <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
         <Label for="formDescripcion" className="mr-sm-2">Descripcion</Label>
         <Input type="text" id="formDescripcion" placeholder="Describe tu tarea" />
       </FormGroup>
@@ -53,7 +60,7 @@ const CreateBenefit = () => {
         <Label for="file" className="mr-sm-2">Selecciona Archivo</Label>
         <Input type="file" id="file" placeholder="Añade archivo"  onChange={fileHandler} />
       </FormGroup>
-      <Button>Submit</Button>
+      <Button>Cargar</Button>
     </Form>
     </Container>
   );

@@ -4,6 +4,7 @@ import {
     useFirestoreCollectionData,
     useFirestore,
   } from 'reactfire';
+import '../viewPages/admin.css';
 
 const ShowBenefit = () => {
 
@@ -25,8 +26,8 @@ return <div>cargando</div>
             <div className="h-20 overflow-x-scroll shadow-inner m-2 border border-black">
               <ul>
                 {benefits.map((benefit) => (
-                  <li key={benefit.NO_ID_FIELD}>
-                    {benefit.descripcion} <img src={benefit.url}/> <button onClick={() => removeBenefit(benefit.NO_ID_FIELD)}>X</button>
+                  <li className="benefit-item" key={benefit.NO_ID_FIELD}>
+                    {benefit.titulo} <img src={benefit.url}/> <button onClick={() => removeBenefit(benefit.NO_ID_FIELD)}>X</button>
                   </li>
                 ))}
               </ul>
