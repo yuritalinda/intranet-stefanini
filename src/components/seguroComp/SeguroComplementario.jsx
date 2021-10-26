@@ -1,128 +1,44 @@
-import React, { useState } from 'react';
+import React from 'react'
+import {collection, query} from 'firebase/firestore';
 import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
-} from 'reactstrap';
-import '../carrusel/Carrusel.css';
+    useFirestoreCollectionData,
+    useFirestore,
+  } from 'reactfire';
+import { Container, Row } from 'reactstrap';
+import '../seguroComp/SeguroComplementario.css';
 
-const items = [
-    {
-      src: 'https://i.postimg.cc/CKyLbXcr/Folleto-Seguro-Complementario-1-page-0001.jpg',
-      altText: 'Titulo',
-      caption: 'Description'
-    },
-    {
-      src: 'https://i.postimg.cc/RFSmRBKd/Folleto-Seguro-Complementario-2-page-0001.jpg',
-      altText: 'Titulo',
-      caption: 'Description'
-    },
-    {
-      src: 'https://i.postimg.cc/tgHpsPgL/Folleto-Seguro-Complementario-3-page-0001.jpg',
-      altText: 'Titulo',
-      caption: 'Description'
-    },
-    {
-      src: 'https://i.postimg.cc/bNszWpMF/Folleto-Seguro-Complementario-4-page-0001.jpg',
-      altText: 'Titulo',
-      caption: 'Description'
-    },
-    {
-      src: 'https://i.postimg.cc/HsRpCF1W/Folleto-Seguro-Complementario-5-page-0001.jpg',
-      altText: 'Titulo',
-      caption: 'Description'
-    },
-    {
-      src: 'https://i.postimg.cc/cL3d1TdR/Folleto-Seguro-Complementario-6-page-0001.jpg',
-      altText: 'Titulo',
-      caption: 'Description'
-    },
-    {
-      src: 'https://i.postimg.cc/ZYfbwCfd/Folleto-Seguro-Complementario-7-page-0001.jpg',
-      altText: 'Titulo',
-      caption: 'Description'
-    },
-    {
-      src: 'https://i.postimg.cc/9ftVZMRz/Folleto-Seguro-Complementario-8-page-0001.jpg',
-      altText: 'Titulo',
-      caption: 'Description'
-    },
-    {
-      src: 'https://i.postimg.cc/Pxw7YVFy/Disen-o-sin-ti-tulo-7.png',
-      altText: 'Titulo',
-      caption: 'Description'
-    },
-    {
-      src: 'https://i.postimg.cc/1X4ZkrWN/INFOGRAFIA-APP-WEB-v2020-1-page-0001.jpg',
-      altText: 'Titulo',
-      caption: 'Description'
-    },
-    {
-      src: 'https://i.postimg.cc/Rh8z4J8p/INFOGRAFIA-APP-WEB-v2020-2-page-0001.jpg',
-      altText: 'Titulo',
-      caption: 'Description'
-    },
-    {
-      src: 'https://i.postimg.cc/pTcsK696/IMG-5152.jpg',
-      altText: 'Titulo',
-      caption: 'Description'
-    },
-    {
-      src: 'https://i.postimg.cc/8cqw0fmd/IMG-5153.jpg',
-      altText: 'Titulo',
-      caption: 'Description'
-    }
-];
-  
-const SeguroComp = (props) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
+const SeguroComplementario = () => {
+   
 
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  }
 
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  }
+    const firestore = useFirestore();
+    const segurosComplCollection = collection(firestore, 'Seguro Complementario');
+    const segurosComplQuery = query(segurosComplCollection);
+    const { data: segurosCompl } = useFirestoreCollectionData(segurosComplQuery);
 
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  }
+        if (!segurosCompl) {
+return <div>cargando</div>
+        }
 
-  const slides = items.map((item) => {
-    return (
-      <CarouselItem className="carrusel-item"
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={item.src}
-      >
-        <img className="carr-img" src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
-      </CarouselItem>
-    );
-  });
+        console.log(segurosCompl[0]);
 
-  return (
-    <Carousel
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-      interval={false}
-    >
-      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-      {slides}
-      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-      <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-    </Carousel>
-  );
-}
+        return (
+         
+            <Container> 
+         
+                {segurosCompl.map((benefit) => (
+                    <Row key={benefit.NO_ID_FIELD} >
+                      
+                    <img src={benefit.url} alt="" className="seguro"  />
+                    </Row>
+               
+                
+                ))}
+            
+            </Container> 
+           
+        );
+      };
 
-export default SeguroComp;
+
+export default SeguroComplementario;
