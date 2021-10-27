@@ -1,5 +1,5 @@
 import React from 'react'
-import {collection, query} from 'firebase/firestore';
+import {collection, query, orderBy} from 'firebase/firestore';
 import {
     useFirestoreCollectionData,
     useFirestore,
@@ -13,7 +13,7 @@ const SeguroComplementario = () => {
 
     const firestore = useFirestore();
     const segurosComplCollection = collection(firestore, 'Seguro Complementario');
-    const segurosComplQuery = query(segurosComplCollection);
+    const segurosComplQuery = query(segurosComplCollection, orderBy('id', 'asc'));
     const { data: segurosCompl } = useFirestoreCollectionData(segurosComplQuery);
 
         if (!segurosCompl) {
