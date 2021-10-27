@@ -4,7 +4,7 @@
 ## Índice
 
 * [1. Antecedentes](#1-Antecedentes)
-* [2. Desafío](#2-Desafio)
+* [2. Desafío y planificacion](#2-Desafio)
 * [3. Planificacion ](#3-Planificacion)
 * [4. Test de usabilidad](#4-Test_de_usabilidad)
 
@@ -52,7 +52,8 @@ Entregar una Intranet de alto impacto, amigable y SEGURA, que contenga toda
 la información necesaria que todo Stefaniner debe conocer al formar parte de
 nuestra empresa.
 
-Una vez identificadas la problematica nos organizamos en GitHub Project 
+Una vez identificadas la problematica nos organizamos en GitHub Project.
+*
 https://github.com/yuritalinda/intranet-stefanini/projects/1?fullscreen=true
  
  
