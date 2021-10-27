@@ -38,7 +38,6 @@ input{
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #fafafa54;
   height: 500px;
   overflow: scroll;
   padding-top: 30px;
@@ -54,6 +53,9 @@ input{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background-color: #fafafa54;
+  margin: 1%;
+  padding: 1%;
 }
 .item-container p{
   width: 20%;
