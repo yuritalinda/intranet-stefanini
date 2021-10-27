@@ -5,8 +5,8 @@
 
 * [1. Antecedentes](#1-Antecedentes)
 * [2. Desafío y planificacion](#2-Desafio)
-* [3. Prototipo ](#3-Prototipo)
-* [4. Tecnologia usada](#4-Tecnologia_usada)
+* [3. Prototipos ](#3-Prototipos)
+* [4. Tecnologias usadas](#4-Tecnologias_usadas)
 
 
 ***
@@ -64,7 +64,7 @@ https://github.com/yuritalinda/intranet-stefanini/projects/1?fullscreen=true
        
      
 
-  ## 3. Prototipo
+  ## 3. Prototipos
 
   Nuestro prototipo en alta fidelidad :https://www.figma.com/file/4ciEpUpqsoXPXtvEMLDzeS/Stefanini?node-id=0%3A1
   
@@ -75,7 +75,7 @@ https://github.com/yuritalinda/intranet-stefanini/projects/1?fullscreen=true
   
   ***
   
-   ### 4. Tecnología Usada
+   ### 4. Tecnologías Usadas
     
     React
     Html5
