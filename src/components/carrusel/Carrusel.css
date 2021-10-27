@@ -1,7 +1,7 @@
 @import '../../index.css';
 
 .carrusel-container{
-  max-width: 80%;
+  max-width: 100%;
   max-height: 600px;
 }
 

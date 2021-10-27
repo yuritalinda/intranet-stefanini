@@ -79,8 +79,8 @@ const items = [
       >
         <CarouselIndicators  items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
         {slides}
-        <CarouselControl className="indicators" direction="prev" directionText="Previous" onClickHandler={previous} />
-        <CarouselControl className="indicators" direction="next" directionText="Next" onClickHandler={next} />
+        <CarouselControl className="" direction="" directionText="" onClickHandler={previous} />
+        <CarouselControl className="" direction="" directionText="" onClickHandler={next} />
       </Carousel>
     );
   }
