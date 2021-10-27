@@ -96,9 +96,21 @@ input{
   }
   .button-delete{
     width: 18%;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     margin-left: 40px;
     padding:10px;
+    border: none;
   }
+
+  .img-benef{
+    width: 100px;
+  }
+
+.item-container p{
+  font-size: medium;
+  width: 30%;
+}
+
+
 
 }

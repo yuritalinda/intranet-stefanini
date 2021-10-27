@@ -25,7 +25,7 @@ const ShowOption = () => {
         <div class="grid-wrapper">
         {
         benefits.map((benefit, index)=>{
-            if (index > 1 && index % 3 == 0){
+            if (index > 1 && index % 3 === 0){
                 return (
                     <div class="tall wrapper" key={benefit.NO_ID_FIELD}>
                         <img src={benefit.url} alt={benefit.titulo} />
@@ -37,7 +37,7 @@ const ShowOption = () => {
                     </div>
                 )
             }
-            if (index > 1 &&  index % 4 == 0){
+            if (index > 1 &&  index % 4 === 0){
                 return (
                     <div class="wide wrapper" key={benefit.NO_ID_FIELD}>
                         <img src={benefit.url} alt={benefit.titulo} />

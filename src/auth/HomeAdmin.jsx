@@ -31,7 +31,7 @@ import { Container, Row, Col } from 'reactstrap';
         <button className="button-cerrar" onClick={cerrarSesion}>Cerrar Sesión</button>
         </Col>
   
-
+        <h1 className="admin-title">Bienvenido al portal de Administrador</h1>
         <Benefit />
  
       

@@ -12,12 +12,12 @@ const items = [
     {
       src: 'https://i.postimg.cc/FHqrFHC8/pexels-andrea-piacquadio-3769021.jpg',
       altText: 'Titulo',
-      caption: 'Description'
+      caption: 'Bienvenidos al Intranet de Stefaninier'
     },
     {
       src: 'https://i.postimg.cc/BQbf8GF0/pexels-edmond-dante-s-4344860.jpg',
       altText: 'Titulo',
-      caption: 'Description'
+      caption: 'Conoce los beneficios que tenemos para ti'
     },
     {
       src: 'https://i.postimg.cc/cC4yMp5f/pexels-fauxels-3183197.jpg',  
@@ -65,7 +65,7 @@ const items = [
           key={item.src}
         >
           <img src={item.src} alt={item.altText} />
-          <CarouselCaption className="caption" captionText={item.caption} captionHeader={item.caption} />
+          <CarouselCaption className="caption"  captionHeader={item.caption} />
         </CarouselItem>
       );
     });
