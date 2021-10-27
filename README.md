@@ -6,7 +6,7 @@
 * [1. Antecedentes](#1-Antecedentes)
 * [2. Desafío y planificacion](#2-Desafio)
 * [3. Prototipo ](#3-Prototipo)
-* [4. Test de usabilidad](#4-Test_de_usabilidad)
+* [4. Tecnologia usada](#4-Tecnologia_usada)
 
 
 ***
@@ -21,6 +21,7 @@ Actualmente no tenemos una plataforma que permita visualizar toda la
 información que un Stefaniner (colaborador de Stefanini) debe conocer como
 parte de esta empresa. Existe mucha información disgregada que se pierde en
 la memoria de los empleados
+
  
 ### DATOS
 
@@ -46,6 +47,8 @@ III. Información unificada
 IV. Conexión CMS
 V. Debe ser customizable
 
+***
+
 ## 2. DESAFÍO Y PLANIFICACION
 
 Entregar una Intranet de alto impacto, amigable y SEGURA, que contenga toda
@@ -56,38 +59,33 @@ Una vez identificadas la problematica nos organizamos en GitHub Project.
 
 https://github.com/yuritalinda/intranet-stefanini/projects/1?fullscreen=true
 
-       
+
+ ***      
        
      
 
   ## 3. Prototipo
 
-  ### 3.1 Prototipo de Baja Fidelidad
+  Nuestro prototipo en alta fidelidad :https://www.figma.com/file/4ciEpUpqsoXPXtvEMLDzeS/Stefanini?node-id=0%3A1
   
   <img src="prototipo.PNG">
 
   <img src="prototipo admin.PNG">
   
   
+  ***
   
-   ### FEEDBACK
-   Temática agradable.
-   Los iconos fueron fácilmente identificados, a excepción del icono de ayuda.
-   De igual manera se nos sugirió aplicar opcion de ayuda pero con imagenes.
+   ### 4. Tecnología Usada
+    
+    React
+    Html5
+    Css
+    Bootstrap
+    Firebase
+    
+    
 
 
 
 
-   ### 3.2. Prototipo de Alta Fidelidad
-  Partiendo de ambos modelos desarrollados, se obtuvo el siguiente esquema, que muestra el funcionamiento de la app.
-  
-   <img src="/ImgReadme/responsivepc.PNG">
-   <img src="/ImgReadme/responsiveIphone.PNG">
-   <img src="/ImgReadme/responsiveIphone2.PNG">
 
- 
-  
-
-## 4. Test de Usabilidad
-
-Para realizar pruebas con usuari@s reales, le pedimos a dos niñas con edades de 7 y 9 respectivamente  que utilizaran la aplicación web, dandole como instrucción "utiliza esta página". .
