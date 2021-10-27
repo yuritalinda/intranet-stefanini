@@ -10,29 +10,29 @@ import '../carrusel/Carrusel.css';
 
 const items = [
     {
-      src: 'https://i.postimg.cc/FHqrFHC8/pexels-andrea-piacquadio-3769021.jpg',
+      src: 'https://i.postimg.cc/HL6NSPcX/pexels-fauxels-3184291-min-opt.jpg',
       altText: 'Titulo',
-      caption: 'Bienvenidos al Intranet de Stefaninier'
+      caption: 'Bienvenidos al Intranet de Stefanini'
     },
     {
-      src: 'https://i.postimg.cc/BQbf8GF0/pexels-edmond-dante-s-4344860.jpg',
+      src: 'https://i.postimg.cc/1zBBmnyQ/pexels-andrea-piacquadio-3769021-min-opt.jpg',
       altText: 'Titulo',
       caption: 'Conoce los beneficios que tenemos para ti'
     },
     {
-      src: 'https://i.postimg.cc/cC4yMp5f/pexels-fauxels-3183197.jpg',  
+      src: 'https://i.postimg.cc/2SFMW5CH/pexels-fauxels-3183197-min-opt.jpg',  
       altText: 'Titulo',
-      caption: 'Description'
+      caption: 'Te ayudamos a desarrollar tus habilidades'
     },
     {
-      src: 'https://i.postimg.cc/q7yTkX36/pexels-fauxels-3184291.jpg',  
+      src: 'https://i.postimg.cc/zBPkhsL2/mentoring-min-opt.jpg',  
       altText: 'Titulo',
-      caption: 'Description'
+      caption: 'Te acompañamos en todo tu proceso'
     },
     {
-      src: 'https://i.postimg.cc/rwdTHLyJ/pexels-karolina-grabowska-4977479.jpg',  
+      src: 'https://i.postimg.cc/85s0xBM3/cumple-min.jpg',  
       altText: 'Titulo',
-      caption: 'Description'
+      caption: 'Podras ver los cumpleañeros del mes'
     }
   ];
   
