@@ -32,7 +32,7 @@ return <div>cargando</div>
                     {benefit.descripcion}
                     </p>
                     <div className="contenedor-img">
-                    <img className="img-benef" src={benefit.url}/> 
+                    <img className="img-benef" alt="beneficio" src={benefit.url}/> 
                     </div>
                     <button className="button-delete" onClick={() => removeBenefit(benefit.NO_ID_FIELD)}>Eliminar</button>
                      

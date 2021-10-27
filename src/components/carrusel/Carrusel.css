@@ -17,7 +17,10 @@
 }
 
 .caption{
-  background-color: #3048a531;
+  background-color: #0b164198;
+  top: 50px;
+  height: 100px;
+  font-weight: 600;
 }
 
 @media (max-width: 500px){

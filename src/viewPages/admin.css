@@ -44,14 +44,30 @@
 }
 
 .row{
- padding-top: 10%;
- padding-right: 2%;
+ padding-top: 5%;
+ padding-right: 5%;
 background-color: #0b16417e;
 
+}
+
+.admin-title{
+  width: 80%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 5%;
+  box-shadow: 2px 2px 4px #009fd7;
+  background-color: #fafafa;
+  color: #0b1641;
 }
 
 @media (max-width: 500px){
   .login-container{
     width: 90%;
+  }
+
+  .admin-title h1{
+    font-size: 1rem;
+    padding: 2%;
   }
 }

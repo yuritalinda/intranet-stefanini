@@ -13,3 +13,11 @@
   font-weight: 500;
   text-shadow: 2px 2px var(--bg-app);
 }
+
+@media (max-width: 500px){
+  .footer-credits{
+    font-size: medium;
+    padding: 10%;
+    text-align: center;
+  }
+}

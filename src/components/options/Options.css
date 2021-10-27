@@ -37,19 +37,27 @@
 }
 
 .wrapper a {
-	color: black;
+	color: aliceblue;
 	text-decoration: none;
-	font-size: 1.2rem;
-	background-color: rgba(61, 126, 206, 0.673);
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1.5rem;
+
 }
+
 
 .wrapper .text {
 	position:absolute;
 	visibility:hidden;
 	transform: translate(0%, 500%);
+	background-color: #0b16419c;
+	transform: .3 ease;
+	padding-left: 2%;
+	padding-right: 2%;
+	transform: scale(1);
+	border-radius: 5px;
 
 }
+
+
 .tall.wrapper .text{
 	transform: translate(0%, 600%);
 }
@@ -57,6 +65,8 @@
 	visibility:visible;
 	
 }
+
+
 
 .wrapper img {
 	box-shadow: 5px 5px 4px #0b164152;
