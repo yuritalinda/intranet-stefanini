@@ -1,6 +1,6 @@
-### Integrantes: Nicole Quijada, Daniela Araque, Yuri Baptista y Maria Parra
-
 # Desafío Stefanini:Intranet Colaboradores
+
+### Integrantes: Nicole Quijada, Daniela Araque, Yuri Baptista y Maria Parra
 
 
 ## Índice
