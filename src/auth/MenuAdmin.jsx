@@ -1,10 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBriefcase,
-  faPaperPlane,
-  faQuestion,
-  faImage,
+    faFolder,
+    faBirthdayCake,
+    faBell,
+    faUsers,
+    faTrashAlt,
+    faFileMedical,
 } from "@fortawesome/free-solid-svg-icons";
 import { NavItem, NavLink, Nav } from "reactstrap";
 import classNames from "classnames";
@@ -21,13 +23,12 @@ const MenuAdmin = ({ isOpen, toggle }) => (
       <div className="side-menu">
         <Nav vertical className="secction-options">
           <div className="options">
-            <a href="">Crear beneficio</a> 
-
-            <a href="">Cumpleaños</a>
-            <a href="">Archivos</a>
-            <a href="">Notificaciones</a>
-            <a href="">Empleados</a>
-            <a href="">Reciclaje</a>
+            <a href=""><span> <FontAwesomeIcon icon={faFileMedical} className="mr-2"/> Crear beneficio</span></a>
+            <a href=""><span> <FontAwesomeIcon icon={faBirthdayCake} className="mr-2"/> Cumpleaños</span></a>
+            <a href=""><span> <FontAwesomeIcon icon={faFolder} className="mr-2"/> Archivos</span></a>
+            <a href=""><span> <FontAwesomeIcon icon={faBell} className="mr-2"/> Notificaciones</span></a>
+            <a href=""><span> <FontAwesomeIcon icon={faUsers} className="mr-2"/> Empleados</span></a>
+            <a href=""><span> <FontAwesomeIcon icon={faTrashAlt} className="mr-2"/> Reciclaje</span></a>
           </div>
         </Nav>
       </div>
