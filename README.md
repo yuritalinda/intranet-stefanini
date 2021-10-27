@@ -5,7 +5,7 @@
 
 * [1. Antecedentes](#1-Antecedentes)
 * [2. Desafío y planificacion](#2-Desafio)
-* [3. Planificacion ](#3-Planificacion)
+* [3. Prototipo ](#3-Prototipo)
 * [4. Test de usabilidad](#4-Test_de_usabilidad)
 
 
@@ -53,66 +53,14 @@ la información necesaria que todo Stefaniner debe conocer al formar parte de
 nuestra empresa.
 
 Una vez identificadas la problematica nos organizamos en GitHub Project.
-*
+
 https://github.com/yuritalinda/intranet-stefanini/projects/1?fullscreen=true
- 
- 
 
-
-
-
-  ## 2. Desarrollar Historias de Usuarios mas Importantes
-
-  ### 2.1 "Como jugadora quiero que mis cartas estén barajadas correctamente en cada partida para que el juego sea más entretenido"
-  
-     Criterios de Aceptación
-  
-       - Antes de que la usuaria comience a jugar, las cartas deben mostrarse ordenadas en filas y en columnas.
-       
-       - Cada vez que se inicie una partida debe establecerse un nuevo orden de las cartas.
-       
-       - La usuaria antes de iniciar la partida debe observar las cartas boca abajo.
-       
-       - El tablero con las cartas barajadas boca abajo debe estar adaptado a todas las pantallas de los diferentes dispositivos.
-       
-   ### 2.2" Como jugadora necesito que al formar el par, las cartas se fijen en el tablero para saber cuántos aciertos tengo"
-  
-       Criterios de Aceptación
-   
-       - El volteo de cartas debe ser de 2 en 2 en cada turno.
-       
-       - Las cartas que no coincidan por turno deben voltearse boca bajo inmediatamente.
-       
-       - Si al voltear dos cartas en el turno  estas coinciden deben desaparecer pero el espacio que ocupaban debe mantenerse en el tablero.
-       
-       - El tablero con las cartas barajadas boca abajo debe estar adaptado a todas las pantallas de los diferentes dispositivos.
-       
-       
-   ### 2.3" Como usuaria de la aplicación quiero que al momento de voltear las cartas suenen para sea más entretenido juga"
-    
-       Criterios de Aceptación
-   
-        - Al momento de voltear cada una de las cartas la usuaria debe percibir un efecto sonoro.
-       
-        - El efecto sonoro debe tener la misma duración que el volteo de las cartas.
-       
-        - Al hacer match debera tener un efecto sonoro diferente al efecto  de voltear las cartas.
-        
-        
-   ### 2.4" Como jugadora quiero que se me avise cuando gane "
-    
-       Criterios de Aceptación
-   
-        - La usuaria acabará con la partida cuando este el tablero vacio en su totalidad.
-       
-        - Debe haber un punto por cada match.
-       
-        - Se debe mostrar un mensaje de felicitaciones cuando haya finalizado el juego..
        
        
      
 
-  ## 3. Diseño de Prototipo de Baja , Alta fidelidad y feedback
+  ## 3. Prototipo
 
   ### 3.1 Prototipo de Baja Fidelidad
 
