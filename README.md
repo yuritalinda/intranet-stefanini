@@ -63,8 +63,11 @@ https://github.com/yuritalinda/intranet-stefanini/projects/1?fullscreen=true
   ## 3. Prototipo
 
   ### 3.1 Prototipo de Baja Fidelidad
+  
+  <img src="prototipo.PNG">
 
-  <img src="/ImgReadme/bajafidelidad.png">
+  <img src="prototipo admin.PNG">
+  
   
   
    ### FEEDBACK
