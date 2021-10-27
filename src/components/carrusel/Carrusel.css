@@ -1,2 +1,21 @@
 @import '../../index.css';
 
+.carrusel-container{
+  max-width: 80%;
+  max-height: 600px;
+}
+
+.carrusel-item{
+  width: 100vw;
+  height: 500px;
+}
+
+.indicators span{
+  background-color: #0B1641;
+  border-radius: 5px;
+  padding: 10%;
+}
+
+.caption{
+  background-color: #3048a531;
+}

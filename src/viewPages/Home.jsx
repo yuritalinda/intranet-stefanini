@@ -13,7 +13,9 @@ export default function Home() {
          <div className="main-container">
 
          <Carrusel />
+         
          <ShowOption />
+
          </div>
 
          <Footer />

@@ -5,6 +5,8 @@ import {
     useFirestore,
   } from 'reactfire';
 
+import '../options/Options.css'  
+
 const ShowOption = () => {
 
     const firestore = useFirestore();
@@ -20,17 +22,19 @@ return <div>cargando</div>
 
         return (
          
-<div className="grid-wrapper">    
+<div className="masonery">    
+
          
                 {benefits.map((benefit) => (
-                    <div className= "btn-img" key={benefit.NO_ID_FIELD}>
-                    <img src={benefit.url} alt="" />
-                <a href={benefit.urlBeneficio} target="_blank" rel="noopener noreferrer" className="option-link">
-                <h3 class="image__title">{benefit.titulo}</h3></a>	
-                </div>
+                    <div className= "masonery-item" key={benefit.NO_ID_FIELD}>
+                            <img src={benefit.url} alt={benefit.titulo} />
+                            <a href={benefit.urlBeneficio} target="_blank" rel="noopener noreferrer" className="option-link">
+                                <p class="title-img">{benefit.titulo}</p>
+                            </a>	
+                    </div>
                 ))}
             
-            </div>
+</div>
            
         );
       };

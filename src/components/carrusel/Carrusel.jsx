@@ -64,22 +64,23 @@ const items = [
           onExited={() => setAnimating(false)}
           key={item.src}
         >
-          <img className="carr-img" src={item.src} alt={item.altText} />
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+          <img src={item.src} alt={item.altText} />
+          <CarouselCaption className="caption" captionText={item.caption} captionHeader={item.caption} />
         </CarouselItem>
       );
     });
   
     return (
       <Carousel
+        className="carrusel-container"
         activeIndex={activeIndex}
         next={next}
         previous={previous}
       >
-        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+        <CarouselIndicators  items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
         {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+        <CarouselControl className="indicators" direction="prev" directionText="Previous" onClickHandler={previous} />
+        <CarouselControl className="indicators" direction="next" directionText="Next" onClickHandler={next} />
       </Carousel>
     );
   }

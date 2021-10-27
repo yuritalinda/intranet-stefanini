@@ -9,6 +9,7 @@ import { collection, addDoc} from "firebase/firestore";
 import {ref, uploadBytes, getDownloadURL} from "firebase/storage";
 
 
+
 const CreateBenefit = () => {
 
   let urlDescarga;
@@ -25,7 +26,7 @@ const CreateBenefit = () => {
     const descripcion = e.target.formDescripcion.value;
     const urlBeneficio = e.target.urlBeneficio.value;
     const titulo = e.target.titulo.value;
-console.log(titulo);
+
   addDoc(benefitsCollection, {titulo, descripcion, urlBeneficio, url: urlDescarga});
   }
 
@@ -40,12 +41,12 @@ console.log(titulo);
     
     // obtener url de descarga
     urlDescarga = await getDownloadURL(archivoRef);
+
   }
 
 
   return (
     <Container>
-      <hr />
       <Form  onSubmit={addBenefit}>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
         <Label for="titulo" className="mr-sm-2">Titulo</Label>
