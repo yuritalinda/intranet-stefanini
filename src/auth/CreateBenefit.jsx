@@ -62,7 +62,7 @@ const CreateBenefit = () => {
       </FormGroup>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
         <Label for="file" className="mr-sm-2">Selecciona Archivo</Label>
-        <Input type="file" id="file" placeholder="Añade archivo"  onChange={fileHandler} />
+        <Input type="file" id="file" onChange={fileHandler} />
       </FormGroup>
       <Button>Enviar</Button>
     </Form>

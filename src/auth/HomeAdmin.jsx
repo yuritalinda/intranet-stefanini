@@ -22,9 +22,20 @@ import { Container, Row, Col } from 'reactstrap';
       return (
         <Container fluid={true}>
           <Row className="row">
-        <Col className="col-auto"><button className="button-cerrar" onClick={cerrarSesion}>Cerrar Sesión</button>
+        <Col className="col-auto">
         <MenuAdmin toggle={toggleSidebar} isOpen={sidebarIsOpen} /></Col>
-        <Col> <Benefit />
+        <Col> 
+
+       
+        <Col sm={{ size: 'auto', offset: 10}}>
+        <button className="button-cerrar" onClick={cerrarSesion}>Cerrar Sesión</button>
+        </Col>
+  
+
+        <Benefit />
+ 
+      
+       
         <Row className="row">
         
         <ShowBenefit />
