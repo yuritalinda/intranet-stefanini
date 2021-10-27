@@ -41,11 +41,11 @@ pueden acceder nuestros colaboradores:
 
 Este producto debe ser capaz de:
 
-I. Diseño novedoso
-II. Modelo Responsivo
-III. Información unificada
-IV. Conexión CMS
-V. Debe ser customizable
+ I. Diseño novedoso
+ II. Modelo Responsivo
+ III. Información unificada
+ IV. Conexión CMS
+ V. Debe ser customizable
 
 ***
 
