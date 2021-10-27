@@ -1,70 +1,141 @@
-# Getting Started with Create React App
+# Desafío Stefanini:Intranet Colaboradores
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Índice
 
-In the project directory, you can run:
+* [1. Antecedentes](#1-Antecedentes)
+* [2. Desafío](#2-Desafio)
+* [3. Planificacion ](#3-Planificacion)
+* [4. Test de usabilidad](#4-Test_de_usabilidad)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+***
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 1. Antecedentes
 
-### `npm test`
+En Stefanini Chile como empresa consultora tradicional está en su camino a
+una transformación digital a nivel corporativo. Esta última tiene que ser 360°
+(interno y externo) por lo que tenemos que ir digitalizando nuestros procesos
+internos y que tiene que ser lo más ágil posible.
+Actualmente no tenemos una plataforma que permita visualizar toda la
+información que un Stefaniner (colaborador de Stefanini) debe conocer como
+parte de esta empresa. Existe mucha información disgregada que se pierde en
+la memoria de los empleados
+ 
+### DATOS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Proporcionar información en una Intranet unificada, con toda la información
+que el colaborador necesita. Estas son las plataformas/información a la cual
+pueden acceder nuestros colaboradores:
+1. Academia: https://stefanini.konviva.com.br/lms/#/home
+2. Acsendo: https://hr.acsendo.com/results/admin
+3. Kenoby: https://jobs.kenoby.com/stefaninilatam
+4. Mentoring: https://mentoring.stefanini.io/#/login
+5. Skill Mapping:https://integra.stefanini.com/portal/0103PROD/PortalSkillMapping#
+6. Portal de RRHH: http://verticales.inetcloud.cl:8082/rrhh/login.aspx
+7. Beneficios Corporativos
+8. Información del Seguro Complementario
+9. Información de cumpleaños.
+10.Creación de perfil del empleado
 
-### `npm run build`
+Este producto debe ser capaz de:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I. Diseño novedoso
+II. Modelo Responsivo
+III. Información unificada
+IV. Conexión CMS
+V. Debe ser customizable
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 2. DESAFÍO Y PLANIFICACION
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Entregar una Intranet de alto impacto, amigable y SEGURA, que contenga toda
+la información necesaria que todo Stefaniner debe conocer al formar parte de
+nuestra empresa.
 
-### `npm run eject`
+Una vez identificadas la problematica nos organizamos en GitHub Project 
+https://github.com/yuritalinda/intranet-stefanini/projects/1?fullscreen=true
+ 
+ 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  ## 2. Desarrollar Historias de Usuarios mas Importantes
 
-## Learn More
+  ### 2.1 "Como jugadora quiero que mis cartas estén barajadas correctamente en cada partida para que el juego sea más entretenido"
+  
+     Criterios de Aceptación
+  
+       - Antes de que la usuaria comience a jugar, las cartas deben mostrarse ordenadas en filas y en columnas.
+       
+       - Cada vez que se inicie una partida debe establecerse un nuevo orden de las cartas.
+       
+       - La usuaria antes de iniciar la partida debe observar las cartas boca abajo.
+       
+       - El tablero con las cartas barajadas boca abajo debe estar adaptado a todas las pantallas de los diferentes dispositivos.
+       
+   ### 2.2" Como jugadora necesito que al formar el par, las cartas se fijen en el tablero para saber cuántos aciertos tengo"
+  
+       Criterios de Aceptación
+   
+       - El volteo de cartas debe ser de 2 en 2 en cada turno.
+       
+       - Las cartas que no coincidan por turno deben voltearse boca bajo inmediatamente.
+       
+       - Si al voltear dos cartas en el turno  estas coinciden deben desaparecer pero el espacio que ocupaban debe mantenerse en el tablero.
+       
+       - El tablero con las cartas barajadas boca abajo debe estar adaptado a todas las pantallas de los diferentes dispositivos.
+       
+       
+   ### 2.3" Como usuaria de la aplicación quiero que al momento de voltear las cartas suenen para sea más entretenido juga"
+    
+       Criterios de Aceptación
+   
+        - Al momento de voltear cada una de las cartas la usuaria debe percibir un efecto sonoro.
+       
+        - El efecto sonoro debe tener la misma duración que el volteo de las cartas.
+       
+        - Al hacer match debera tener un efecto sonoro diferente al efecto  de voltear las cartas.
+        
+        
+   ### 2.4" Como jugadora quiero que se me avise cuando gane "
+    
+       Criterios de Aceptación
+   
+        - La usuaria acabará con la partida cuando este el tablero vacio en su totalidad.
+       
+        - Debe haber un punto por cada match.
+       
+        - Se debe mostrar un mensaje de felicitaciones cuando haya finalizado el juego..
+       
+       
+     
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  ## 3. Diseño de Prototipo de Baja , Alta fidelidad y feedback
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  ### 3.1 Prototipo de Baja Fidelidad
 
-### Code Splitting
+  <img src="/ImgReadme/bajafidelidad.png">
+  
+  
+   ### FEEDBACK
+   Temática agradable.
+   Los iconos fueron fácilmente identificados, a excepción del icono de ayuda.
+   De igual manera se nos sugirió aplicar opcion de ayuda pero con imagenes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+   ### 3.2. Prototipo de Alta Fidelidad
+  Partiendo de ambos modelos desarrollados, se obtuvo el siguiente esquema, que muestra el funcionamiento de la app.
+  
+   <img src="/ImgReadme/responsivepc.PNG">
+   <img src="/ImgReadme/responsiveIphone.PNG">
+   <img src="/ImgReadme/responsiveIphone2.PNG">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+ 
+  
 
-### Advanced Configuration
+## 4. Test de Usabilidad
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Para realizar pruebas con usuari@s reales, le pedimos a dos niñas con edades de 7 y 9 respectivamente  que utilizaran la aplicación web, dandole como instrucción "utiliza esta página". .
