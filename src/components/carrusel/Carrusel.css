@@ -1,7 +1,7 @@
 @import '../../index.css';
 
 .carrusel-container{
-  max-width: 80%;
+  max-width: 100%;
   max-height: 600px;
 }
 
@@ -19,3 +19,23 @@
 .caption{
   background-color: #3048a531;
 }
+
+@media (max-width: 500px){
+  .carrusel-container{
+    max-width: 100%;
+    max-height: 300px;
+  }
+
+  .carrusel-item{
+    width: 100vw;
+    height: 400px;
+  }
+  .carrusel-item img{
+    width: 400px;
+  }
+  .indicators span{
+    display: none;
+    padding: 0;
+  }
+}
+
