@@ -1,0 +1,74 @@
+@import '../index.css';
+
+
+.login-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #009fd7;
+  margin: 15% auto;
+  width: 40%;
+  height: auto;
+  padding: 5%;
+  box-shadow: 10px 10px 8px #0b1641;
+
+  
+}
+
+.login-container label{
+  color: #0b1641;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.login-container input{
+  width: 80%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  background-color: #fafafa;
+
+}
+
+.login-container button{
+  background-color: #0b1641;
+  width: 50%;
+  height: 30px;
+  margin-top: 2%;
+  border: none;
+  border-radius: 5px;
+
+}
+
+.row{
+ padding-top: 5%;
+ padding-right: 5%;
+background-color: #0b16417e;
+
+}
+
+.admin-title{
+  width: 80%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 5%;
+  box-shadow: 2px 2px 4px #009fd7;
+  background-color: #fafafa;
+  color: #0b1641;
+}
+
+@media (max-width: 500px){
+  .login-container{
+    width: 90%;
+  }
+
+  .admin-title h1{
+    font-size: 0.8rem;
+    padding: 2%;
+  
+  }
+}

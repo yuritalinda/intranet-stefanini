@@ -1,0 +1,23 @@
+@import '../../index.css';
+
+
+.footer-container{
+  display: flex;
+ justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.footer-credits{
+  font-size: large;
+  font-weight: 500;
+  text-shadow: 2px 2px var(--bg-app);
+}
+
+@media (max-width: 500px){
+  .footer-credits{
+    font-size: medium;
+    padding: 10%;
+    text-align: center;
+  }
+}

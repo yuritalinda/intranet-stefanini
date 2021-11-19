@@ -1,0 +1,46 @@
+
+.sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background:#F7F2EC;
+    color: black;
+    margin-left: -250px;
+    transition: all 0.5s;
+  }
+
+  .sidebar.is-open {
+    margin-left: 0;
+    transition: 0.5s;
+  }
+  
+  .header-banner {
+    background: #F7F2EC;
+  }
+  
+  .header-banner h3 {
+    color: black;
+    padding: 1em;
+  }
+  .side-menu {
+    height: calc(100vh - 130px);
+    overflow-y: scroll;
+  }
+    .secction-options{
+    background-color:#F7F2EC;
+  }
+  .options a{
+    color:#0b1641;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .options span{
+    color:#0b1641;
+  }
+
+  .options path{
+    color:#0b1641;
+  }
+

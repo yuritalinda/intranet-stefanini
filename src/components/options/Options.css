@@ -1,0 +1,101 @@
+@import '../../index.css';
+
+
+
+
+
+/* Main CSS */
+.grid-wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grid-wrapper > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.grid-wrapper {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-auto-rows: 300px;
+	grid-auto-flow: dense;
+	margin-top: 25px;
+}
+.grid-wrapper .wide {
+	grid-column: span 2;
+}
+.grid-wrapper .tall {
+	grid-row: span 2;
+}
+.grid-wrapper .big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.wrapper a {
+	color: aliceblue;
+	text-decoration: none;
+	font-size: 1.5rem;
+
+}
+
+
+.wrapper .text {
+	position:absolute;
+	visibility:hidden;
+	transform: translate(0%, 500%);
+	background-color: #0b16419c;
+	transform: .3 ease;
+	padding-left: 2%;
+	padding-right: 2%;
+	transform: scale(1);
+	border-radius: 5px;
+
+}
+
+
+.tall.wrapper .text{
+	transform: translate(0%, 600%);
+}
+.wrapper:hover .text {
+	visibility:visible;
+	
+}
+
+
+
+.wrapper img {
+	box-shadow: 5px 5px 4px #0b164152;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.wrapper:hover img {
+	cursor: pointer;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+@media (max-width: 500px){
+	.grid-wrapper{
+		display: flex;
+		flex-direction: column;
+	}
+	.wrapper img {
+		box-shadow: 5px 5px 4px #0b164152;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+	}
+	.wrapper:hover img {
+		cursor: pointer;
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+}
